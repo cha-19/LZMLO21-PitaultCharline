@@ -1,0 +1,29 @@
+html {
+    background-color: #d9c3e3;
+    font-size: 14px;
+    width: 100%;
+}
+
+h1, h2 {
+    /* Utilisation de mesures relatives pour augmenter la taille de la police */
+    font-size: 1.5em; /* Par exemple */
+}
+
+#page {
+    width: 90%; /* Largeur inférieure à 100% pour la bande centrale */
+    margin: 0 auto; /* Centrer la division */
+    background-color: #a7d4d7;
+    border: 20px solid #d4d7a7;
+}
+
+.entete {
+    text-align: center;
+}
+
+#aboutme {
+    /* Style libre */
+}
+
+footer {
+    text-align: center;
+}
