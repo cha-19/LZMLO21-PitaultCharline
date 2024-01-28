@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" type="text" href="Assets/CSS/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Le titre de la page.</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Le titre de la page</title>
+</head>
+<style type="text/css">
+    body 
+    {
+    background-color:#d9c3e3 ;
+    font-size: 14px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+</style>
+<body>
 
-    <body>
-        <h1>Pitault Charline</h1>
-        <h2>Licence 3 Sciences du Langage</h2>
-        <p><h4>Mon avatar :</h4></p>
-        <img src="IMG_4795.JPG"alt="Avatar de Charline"style="width:82.8px;height:147.8px;"/>
-        <p></p>
-        <p><h4>Logo Sorbonne Nouvelle :</h4></p>
-        <img src="http://www.univ-paris3.fr/images/new-site/new_logo_site.jpg">
-        <p></p>
-       <p><h4>Mon CV :</h4></p> 
+    <div id="page">
+        <div class="entete">
+            <h1>Pitault Charline</h1>
+            <h2>Licence 3 Sciences du Langage</h2>
+            <img src="Assets/Img/sorbonne_nouvelle_logo.png" alt="Logo Sorbonne Nouvelle"/>
+            <img src="Assets/Img/IMG_4795.JPG" alt="Avatar de Charline" style="width:82.8px;height:147.8px;"/>
+        </div>
+        <div id="aboutme">
+        <h3>Mon CV :</h3>
         <table>
         <thead>
         <tr><th colspan="2">Pitault Charline</th></tr>
@@ -29,7 +39,7 @@
         <tr><td>Permis de conduire</td><td>Janvier 2022</td></tr> 
         </tbody>
         </thead>
-         <thead>
+        <thead>
         <th>Centres d'interet</th>
         <tbody>
         <tr><td>Photographie</td></tr>
@@ -55,7 +65,7 @@
         <tr><td>Animatrice colonie de vacances</td><td>Ete 2023 - VEOLIA</td></tr>
         <tr><td>Animatrice colonie de vacances</td><td>Aout 2022 - VEOLIA</td></tr>
         <tr><td>Animatrice colonie de vacances</td><td>Juillet 2022 - ODCV19</td></tr>
-         <tr><td>Animatrice classes decouvertes</td><td>Mai a Juillet 2022 - Cote Decouvertes</td></tr>
+        <tr><td>Animatrice classes decouvertes</td><td>Mai a Juillet 2022 - Cote Decouvertes</td></tr>
         <tr><td>Animatrice colonie de vacances</td><td>Ete 2021 - ODCV19</td></tr>
         </tbody>
         </thead>
@@ -68,18 +78,20 @@
         <tr><td>PSC1</td><td>2017</td></tr>
         </tbody>
         </thead>
-        </table>
-        <p></p>
-        <p></p>
-        <p><h4>Liste lecture :</h4></p>
-        <ol>
-        <li>Everything You Want</li>
-        <li>Symbiosa</li>
-        <li>Phone Play</li>
-        <li>La Liste</li>
-        <li>Hunger Games</li>
-        </ol>
-        <p><h4>Lien Hypertexte :</h4></p>
-        <p>Aller sur le site <a href="http://www.univ-paris3.fr">Sorbonne Nouvelle</a></p>
-    </body>
+            </table>
+            <h3>Liste de lectures :</h3>
+            <ol>
+                <li>Everything You Want, Morgane Bicail</li>
+                <li>Symbiosa, Morgane Bicail</li>
+                <li>Phone Play, Morgane Bicail</li>
+                <li>La Liste</li>
+                <li>Hunger Games, Suzanne Collins</li>
+            </ol>
+        </div>
+        <footer>
+            <p><h4>Lien Hypertexte :</h4></p>
+            <a href="https://www.univ-paris3.fr/">Site de Sorbonne Nouvelle</a>
+        </footer>
+    </div>
+</body>
 </html>
