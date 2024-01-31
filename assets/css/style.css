@@ -1,0 +1,29 @@
+html {
+    background-color: #82cedb;
+    font-size: 14px;
+    width: 100%;
+}
+
+h1, h2 {
+    /* Utilisation de mesures relatives pour augmenter la taille de la police */
+    font-size: 1.5em; 
+}
+
+#page {
+    width: 70%; 
+    margin: 0 auto; 
+    background-color: #a7d4d7;
+    border: 20px solid #228ab2;
+}
+
+.entete {
+    text-align: center;
+}
+
+#aboutme {
+    background-color: #2dbebf;
+}
+
+footer {
+    text-align: center;
+}
