@@ -21,6 +21,7 @@ h1, h2 {
 }
 
 #aboutme {
+    border-radius : 20px
     background-color: #2dbebf;
 }
 
