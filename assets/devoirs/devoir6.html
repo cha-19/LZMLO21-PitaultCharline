@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        
+    </head>
+    <body> 
+       <p><a href="assets/devoirs/devoir6.js" target="_blank">Cliquer pour analyser</a></P>
+    <button id="my-button">Cliquer ici pour faire apparaître les informations sur le poème</button>
+     <script>
+        const myButton = document.getElementById('my-button');
+        myButton.onclick = function() {
+            const myDiv = document.getElementById('my-div');
+            myDiv.innerHTML = '<h1>Une courte série de mots!</h1>';
+        };
+   
+    </script>       
+    </body>
+    
+</html>
