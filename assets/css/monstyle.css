@@ -1,35 +1,35 @@
 html {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%;
-	background: rgb(141, 14, 87);
+	background: #a3e2c2;
 }
 
 .mylabel {
-	background-color: rgb(255, 204, 51);
+	background-color: #23d9bb;
 	font-family: arial,helvetica,sans-serif;
 	font-variant: small-caps;
 	font-size: 90%;
 	padding: 2px;
-	border-right: 1px solid rgb(204, 153, 0);
-	border-bottom: 1px solid rgb(204, 153, 0);
+	border-right: 1px solid #23d9bb;
+	border-bottom: 1px solid #23d9bb;
 }
 
 .infolog {
 	text-align:center;
-	border: 2pt solid rgb(0, 128, 0);
+	border: 2pt solid #43b7ec;
 	padding: 1pt;
 	margin-left: 0px;
 	margin-right: 0px;
-	background: rgb(128, 255, 128);
+	background: #43b7ec;
 }
 
 .errorlog {
 	text-align:center;
-	border: 2pt solid rgb(255, 0, 0);
+	border: 2pt solid #14de78;
 	padding: 2pt;
 	margin-left: 0px;
 	margin-right: 0px;
-	background-color: rgb(255, 96, 96);
+	background-color: #14de78;
 }
 
 #page  {
@@ -38,7 +38,7 @@ html {
 }
 
 #container {
-	background-color: white;
+	background-color: #d3a4e3;
 	border: 3px solid black;
 	padding: 2px;
 	padding-bottom: 5%; 
