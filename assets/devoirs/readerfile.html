@@ -5,9 +5,14 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="http://www.tal.univ-paris3.fr/plurital/logo.ico">
     <title>Lecture des données dans un fichier...</title>
-    <script type="text/javascript" language="javascript" src="../js/code.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/code_projet.js"></script>
     <link rel="stylesheet" href="../css/monstyle.css" />
-
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chartist@0.11.4/dist/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chartist@0.11.4/dist/chartist.min.js"></script>
+    <script type="text/javascript" src="xregexp-all.js"></script>
+    <script type="text/javascript" src="mesprogrammes.js"></script>
+    <script type="text/javascript" language="javascript" src="ma-librairie.js"></script>
+    
 </head>
 
 <body>
@@ -29,6 +34,7 @@
                         <label for="delimID" class="mylabel">Délimiteur(s)</label>
                         &nbsp;
                         <input type="text" value=" ,;’'~|&#@=`-.?!%*$()[]{}_:+«»§\/" name="delim" id="delimID" size="40" />
+
                     </small>
                     <br />
                     <small>
@@ -44,19 +50,20 @@
                     </small>
                     <br />
                     <br />
-                    <button onclick="alert('bonjour');"><span>Bonjour</span></button>
+                    <button onclick="alert('Bienvenue sur mon site !');"><span>😁</span></button>
                     <br />
                     <br />
-                    <button class="submit" onclick="segmentText()'Je ne fais rien, changez-moi !';"><span>Segmentation</span></button>
-                    <button class="submit" onclick="alert('Je ne fais rien, changez-moi !');"><span>action 1</span></button>
-                    <button class="submit" onclick="alert('Je ne fais rien, changez-moi !')"><span>action 2</span></button>
-                    <button class="submit" onclick="alert('Je ne fais rien, changez-moi !')"><span>action 3</span></button>
-                    <button class="submit" onclick="alert('Je ne fais rien, changez-moi !')"><span>action 4</span></button>
-                    <button class="submit" onclick="alert('Je ne fais rien, changez-moi !')"><span>action 5</span></button>
-                    <button class="submit" onclick="alert('Je ne fais rien, changez-moi !')"><span>action 6</span></button>
+
+                    <button class="submit" onclick="sort_words();"><span>Segmentation</span></button>
+                    <button class="submit" onclick="pie_chars();"><span>Camembert - Nombre de caractères</span></button>
+                    <button class="submit" onclick="findCooccurrents();"><span>Coocurents/Fréquence</span></button>
+                    <button class="submit" onclick="plotCoOccurrences();"><span>Visualisation Coocurents</span></button>
+                    <span><a href="aide.html" target="_blank">HELP!</a></span>
                 </p>
             </div>
             <div id="logger" style="width:100%"></div>
+            <div id="coOccurrenceChart"></div>
+
             <br />
             <div id="Global">
                 <div id="fileDisplayArea"></div>
@@ -64,5 +71,16 @@
             </div>
         </div>
     </div>
+    <script>
+        function findCooccurrents() {
+            var fileInput = document.getElementById("fileInput");
+            if (fileInput.files.length === 0) {
+                alert("Aucun fichier chargé. Veuillez sélectionner un fichier.");
+                return;
+            }
+            // Ajoutez ici le code pour la fonctionnalité de cooccurrents/fréquence
+        }
+    </script>
 </body>
+
 </html>
